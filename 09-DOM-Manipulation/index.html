@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    h2 {
+      color: #666;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+    #dynamicList {
+      list-style-type: none;
+      padding: 0;
+    }
+    #dynamicList li {
+      background: #f0f0f0;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript DOM Manipulation</h1>
+
+  <div class="container">
+    <h2>1. Selecting Elements</h2>
+    <p id="demo">This is a paragraph with ID "demo"</p>
+    <p class="text">Paragraph with class "text" #1</p>
+    <p class="text">Paragraph with class "text" #2</p>
+    <button onclick="selectElements()">Select Elements</button>
+  </div>
+
+  <div class="container">
+    <h2>2. Changing Content</h2>
+    <p id="content">Original content</p>
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="changeHTML()">Change HTML</button>
+  </div>
+
+  <div class="container">
+    <h2>3. Changing Styles</h2>
+    <p id="styledText">This text will change style</p>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="toggleClass()">Toggle Highlight</button>
+  </div>
+
+  <div class="container">
+    <h2>4. Attributes</h2>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder">
+    <br>
+    <button onclick="changeAttribute()">Change Image</button>
+  </div>
+
+  <div class="container">
+    <h2>5. Creating & Removing Elements</h2>
+    <ul id="dynamicList"></ul>
+    <input type="text" id="itemInput" placeholder="Enter item name">
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeLastItem()">Remove Last</button>
+  </div>
+
+  <div class="container">
+    <h2>6. Show/Hide Elements</h2>
+    <p id="toggleText">This text can be toggled</p>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+  </div>
+
+  <script src="dom.js"></script>
+</body>
+</html>

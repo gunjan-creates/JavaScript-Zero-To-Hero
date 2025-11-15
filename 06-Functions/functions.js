@@ -56,15 +56,15 @@ greetUser();
 
 console.log("\n=== REST PARAMETERS ===\n");
 
-function sum(...numbers) {
+function sumAll(...numbers) {
   let total = 0;
   for (let num of numbers) {
     total += num;
   }
   return total;
 }
-console.log("Sum of 1, 2, 3:", sum(1, 2, 3));
-console.log("Sum of 1, 2, 3, 4, 5:", sum(1, 2, 3, 4, 5));
+console.log("Sum of 1, 2, 3:", sumAll(1, 2, 3));
+console.log("Sum of 1, 2, 3, 4, 5:", sumAll(1, 2, 3, 4, 5));
 
 console.log("\n=== CALLBACK FUNCTIONS ===\n");
 

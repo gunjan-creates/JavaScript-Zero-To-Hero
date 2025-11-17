@@ -82,3 +82,6 @@ list.push(3);       // mutation is allowed
 - Change a let variable inside and outside a block to see scoping.
 - Attempt to reassign a const and observe the error.
 - Log a let variable before declaration to see the TDZ in action.
+
+
+Now this is the end of the Readme
